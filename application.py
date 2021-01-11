@@ -51,7 +51,7 @@ conn = sqlite3.connect('finance.db', check_same_thread=False)
 db = conn.cursor()
 
 #An APY_KEY is need it to connect to the API (https://iexcloud.io/)
-if not os.environ.get("API_KEY", "pk_bed6a595932e44698d5f80fd2c622993"):
+if not os.environ.get("API_KEY", "pk_####"):
     raise RuntimeError("API_KEY not set")
 
 @app.route("/")
